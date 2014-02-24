@@ -1,6 +1,1 @@
-<div .row>
-    <div .col-md-12>
-        <hr .wikitop>
-        <div .row>
-            <div .col-md-12>
-                #{renderMarkdown "snowdrift" (wikiEditContent page)}
+#{renderMarkdown "snowdrift" (wikiEditContent page)}

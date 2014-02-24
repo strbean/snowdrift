@@ -619,7 +619,7 @@ getWikiNewCommentsR project_handle = do
 
                 [whamlet|$newline never
                     <div .row>
-                        <div .col-md-9>
+                        <div .col-md-9 .col-md-offset-1 .col-lg-8 .col-lg-offset-2>
                             On #
                             <a href="@{WikiR project_handle target}">
                                 #{target}
@@ -643,6 +643,6 @@ getWikiNewCommentsR project_handle = do
                 return ()
 
     defaultLayout $ do
-        setTitle . toHtml $ projectName project <> " New Comments | Snowdrift.coop"
+        setTitle . toHtml $ projectName project <> " - New Comments | Snowdrift.coop"
         $(widgetFile "wiki_new_comments")
 
